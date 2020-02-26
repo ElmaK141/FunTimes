@@ -256,7 +256,9 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 		
 		switch(fun) {
 		case "000":
-			return "YOU HAVE NO COFFEE!\nYOU HAVE NO CREAM!\nYOU HAVE NO SUGAR!\n\nYou drink the air, as you have no coffee, sugar, or cream.\nThe air is invigorating, but not invigorating enough. You cannot study.\nYou lose!\n";
+			return "[air, as you have no coffee, sugar, or cream.\n" + 
+					"The air is invigorating, but not invigorating enough. You cannot study.\n" + 
+					"You lose]!";
 		case "001":
 			return "You eat the sugar, but without caffeine, you cannot study.\n" + 
 					"You lose!\n";
