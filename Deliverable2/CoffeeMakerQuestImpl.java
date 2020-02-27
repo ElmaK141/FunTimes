@@ -169,13 +169,13 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 				player.addItem(Item.CREAM);
 				return "There might be something here...\nYou found some creamy cream!\n";
 			case "NONE":
-				return "You don't see anything out of the ordinary.";
+				return "You don't see anything out of the ordinary.\n";
 			case "COFFEE":
 				return "There might be something here...\n" + 
-						"You found some caffeinated coffee!";
+						"You found some caffeinated coffee!\n";
 			case "SUGAR":
 				return "There might be something here...\n" + 
-						"You found some sweet sugar";
+						"You found some sweet sugar!\n";
 				
 			}
 			
@@ -256,26 +256,24 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 		
 		switch(fun) {
 		case "000":
-			return "[air, as you have no coffee, sugar, or cream.\n" + 
-					"The air is invigorating, but not invigorating enough. You cannot study.\n" + 
-					"You lose]!";
+			return "YOU HAVE NO COFFEE!\nYOU HAVE NO CREAM!\nYOU HAVE NO SUGAR!\n\nYou drink the air, as you have no coffee, sugar, or cream.\nThe air is invigorating, but not invigorating enough. You cannot study.\nYou lose!\n";
 		case "001":
-			return "You eat the sugar, but without caffeine, you cannot study.\n" + 
+			return "\nYou eat the sugar, but without caffeine, you cannot study.\n" + 
 					"You lose!\n";
 		case "010":
-			return "You drink the cream, but without caffeine, you cannot study.\n" + 
+			return "\nYou drink the cream, but without caffeine, you cannot study.\n" + 
 					"You lose!\n";
 		case "011":
-			return "You drink the sweetened cream, but without caffeine you cannot study.\n" + 
+			return "\nYou drink the sweetened cream, but without caffeine you cannot study.\n" + 
 					"You lose!\n";
 		case "100":
-			return "Without cream, you get an ulcer and cannot study.\n" + 
+			return "\nWithout cream, you get an ulcer and cannot study.\n" + 
 					"You lose!\n";
 		case "101":
-			return "Without cream, you get an ulcer and cannot study.\n" + 
+			return "\nWithout cream, you get an ulcer and cannot study.\n" + 
 					"You lose!\n";
 		case "110":
-			return "Without sugar, the coffee is too bitter. You cannot study.\n" + 
+			return "\nWithout sugar, the coffee is too bitter. You cannot study.\n" + 
 					"You lose!\n";
 		case "111":
 			return "You have a cup of delicious coffee.\nYou have some fresh cream.\nYou have some tasty sugar.\n\nYou drink the beverage and are ready to study!\nYou win!\n";
