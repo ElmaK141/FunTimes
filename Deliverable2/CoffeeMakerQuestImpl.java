@@ -241,7 +241,7 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 		
 		case "H":
 		case "h":
-			return "N - Go north\nS - Go south\nL - Look and collect any items in the room\nI - Show inventory of items collected\nD - Drink coffee made from items in inventory";
+			return "N - Go north\nS - Go south\nL - Look and collect any items in the room\nI - Show inventory of items collected\nD - Drink coffee made from items in inventory\n";
 			
 		default:
 			return "Please enter a valid command.\nFor a full list of commands enter \"H\"";
