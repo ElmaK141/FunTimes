@@ -171,9 +171,11 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 			case "NONE":
 				return "You don't see anything out of the ordinary.\n";
 			case "COFFEE":
+				player.addItem(Item.COFFEE);
 				return "There might be something here...\n" + 
 						"You found some caffeinated coffee!\n";
 			case "SUGAR":
+				player.addItem(Item.SUGAR);
 				return "There might be something here...\n" + 
 						"You found some sweet sugar!\n";
 				
